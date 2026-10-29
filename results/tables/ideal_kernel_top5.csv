@@ -1,0 +1,6 @@
+entanglement,reps,n_qubits,bandwidth_s,cv_balanced_accuracy,cv_balanced_accuracy_std,best_C,classical_baseline,classical_balanced_accuracy,logical_depth,logical_two_qubit_gates,prepared_depth,prepared_two_qubit_gates,nominal_train_pair_evaluations,nominal_test_vs_train_evaluations
+none,2,6,0.8,0.736173797795896,0.0233237619951695,1.0,PCA-RBF-SVM k=8,0.7241890003423944,4,0,,,319600,160000
+linear,2,6,0.3,0.7347225895859456,0.0340277903542871,1.0,PCA-RBF-SVM k=8,0.7241890003423944,25,20,,,319600,160000
+none,1,6,1.2,0.7337034304709885,0.0234097349392247,1.0,PCA-RBF-SVM k=8,0.7241890003423944,2,0,,,319600,160000
+none,1,6,0.8,0.730357736102667,0.02765801245505,10.0,PCA-RBF-SVM k=8,0.7241890003423944,2,0,,,319600,160000
+full,1,6,0.2,0.7299657047820434,0.035981440379899,10.0,PCA-RBF-SVM k=8,0.7241890003423944,29,30,,,319600,160000

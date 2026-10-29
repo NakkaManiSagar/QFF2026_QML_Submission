@@ -1,0 +1,14 @@
+{
+  "n_train": 100,
+  "n_test": 50,
+  "shots": 1024,
+  "pilot_circuits": 20,
+  "pilot_seconds": 1.5824739933013916,
+  "estimated_seconds_per_circuit": 0.07912369966506957,
+  "estimated_total_seconds": 787.2808116674423,
+  "entanglement": "none",
+  "reps": 2,
+  "n_qubits": 6,
+  "bandwidth_s": 0.8,
+  "processor_id": "procD_all_to_all_6_rx_ry_rz_cx"
+}

@@ -1,0 +1,9 @@
+{
+  "best_params": {
+    "svc__C": 1.0,
+    "svc__gamma": 0.01
+  },
+  "cv_balanced_accuracy": 0.7273635806841801,
+  "seed": 42,
+  "model": "RBF SVC with fold-local StandardScaler"
+}

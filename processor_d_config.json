@@ -1,0 +1,149 @@
+{
+  "processor_id": "procD_all_to_all_6_rx_ry_rz_cx",
+  "n_qubits": 6,
+  "coupling_map": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      4
+    ]
+  ],
+  "native_gate_set": [
+    "rx",
+    "ry",
+    "rz",
+    "cx"
+  ],
+  "qubit_layout": "custom",
+  "noise_assumptions": {
+    "single_qubit_error_rate": 0.01,
+    "two_qubit_error_rate": 0.05,
+    "readout_error_rate": 0.02,
+    "notes": "Documentary assumptions only; benchmark uses unchanged QFF2026-v2 noise model."
+  },
+  "design_rationale": "The selected custom topology with native gates rx;ry;rz;cx was selected from measured candidate evidence. Its QFT-3 noisy fidelity was 0.668377, with transpiled depth 18 and 9 two-qubit gates. The mapped best CV-selected kernel had depth 6 and 0 two-qubit gates after official preparation. The directed coupling map is fully bidirectional on each listed link, reducing direction-reversal overhead for CX. These are simulator measurements under the organizer QFF2026-v2 noise model, not physical-device results.",
+  "benchmark_results": {
+    "qft3_circuit_depth_before_transpile": 6,
+    "qft3_circuit_depth_after_transpile": 18,
+    "qft3_two_qubit_gate_count": 9,
+    "qft3_swap_overhead": 0,
+    "qft3_fidelity_ideal": 1.0,
+    "qft3_fidelity_noisy": 0.668377,
+    "benchmark_noise_model_version": "QFF2026-v2"
+  }
+}

@@ -1,0 +1,2 @@
+entanglement,reps,n_qubits,bandwidth_s,cx_count_logical,kernel_error,ideal_balanced_accuracy,noisy_balanced_accuracy
+none,2,6,0.8,0,0.13463623745105535,0.7772435897435898,0.7475961538461539

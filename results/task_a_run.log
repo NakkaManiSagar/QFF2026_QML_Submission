@@ -1,0 +1,4 @@
+Carried forward from the user's later successful local qml-env run (8192 shots, QFF2026-v2).
+ideal: XX=1.000000, YY=-1.000000, ZZ=1.000000, fidelity=1.000000
+noisy: XX=0.819092 (se 0.006338), YY=-0.827881 (se 0.006197), ZZ=0.873535 (se 0.005378), fidelity=0.880127 (se 0.002592)
+The original task_a_run.log in the uploaded ZIP was from an earlier runtime without Qiskit. Re-run python -m src.task_a to regenerate native logs.

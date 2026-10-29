@@ -1,0 +1,31 @@
+{
+  "python": "3.12.3",
+  "qiskit": "2.5.2",
+  "qiskit_aer": "0.17.2",
+  "scikit-learn": "1.8.0",
+  "numpy": "2.4.4",
+  "config": {
+    "n_qubits": 5,
+    "reps": 1,
+    "n_train": 40,
+    "n_test": 30,
+    "shots": 1024,
+    "opt_level": 1,
+    "transpile_seed": 7,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "entanglements": [
+      "full",
+      "linear"
+    ],
+    "scale": 0.2
+  },
+  "processors_official": {
+    "processor_A": false,
+    "processor_B": false
+  },
+  "runtime_s": 293.1
+}

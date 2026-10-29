@@ -1,0 +1,10 @@
+
+Top 5 ideal quantum-kernel configurations beside the best Prompt 2 classical baseline:
+entanglement  reps  n_qubits  bandwidth_s  cv_balanced_accuracy  cv_balanced_accuracy_std  best_C classical_baseline  classical_balanced_accuracy  logical_depth  logical_two_qubit_gates  prepared_depth  prepared_two_qubit_gates  nominal_train_pair_evaluations  nominal_test_vs_train_evaluations
+        none     2         6       0.8000                0.7362                    0.0233  1.0000    PCA-RBF-SVM k=8                       0.7242              4                        0             NaN                       NaN                          319600                             160000
+      linear     2         6       0.3000                0.7347                    0.0340  1.0000    PCA-RBF-SVM k=8                       0.7242             25                       20             NaN                       NaN                          319600                             160000
+        none     1         6       1.2000                0.7337                    0.0234  1.0000    PCA-RBF-SVM k=8                       0.7242              2                        0             NaN                       NaN                          319600                             160000
+        none     1         6       0.8000                0.7304                    0.0277 10.0000    PCA-RBF-SVM k=8                       0.7242              2                        0             NaN                       NaN                          319600                             160000
+        full     1         6       0.2000                0.7300                    0.0360 10.0000    PCA-RBF-SVM k=8                       0.7242             29                       30             NaN                       NaN                          319600                             160000
+
+Best Prompt 2 baseline: PCA-RBF-SVM k=8 (balanced accuracy=0.7242)

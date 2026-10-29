@@ -1,0 +1,18 @@
+{
+  "selection_rule": "highest fold-local CV balanced accuracy among top ablation shortlist; tie-break lower fold SD",
+  "shortlist_size": 12,
+  "validation_protocol": "PCA and MinMaxScaler fit only on each CV training fold",
+  "entanglement": "none",
+  "reps": 2,
+  "n_qubits": 6,
+  "bandwidth_s": 0.8,
+  "C": 1.0,
+  "cv_balanced_accuracy": 0.736173797795896,
+  "cv_balanced_accuracy_std": 0.023323761995169518,
+  "cv_f1": 0.7326697205551829,
+  "cv_f1_std": 0.027449948969701078,
+  "train_rows": 800,
+  "test_predictions": 200,
+  "seed": 42,
+  "caveat": "CV score is used for model selection from a shortlist; it is not an independent final test estimate."
+}

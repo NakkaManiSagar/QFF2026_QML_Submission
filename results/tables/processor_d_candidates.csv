@@ -1,0 +1,9 @@
+processor_id,topology,n_qubits,native_gate_set,directed_edges,kernel_entanglement,kernel_reps,kernel_n_qubits,qft3_circuit_depth_before_transpile,qft3_circuit_depth_after_transpile,qft3_two_qubit_gate_count,qft3_swap_overhead,qft3_fidelity_ideal,qft3_fidelity_noisy,kernel_depth_before,kernel_depth_after,kernel_two_qubit_gates_logical,kernel_two_qubit_gates_after_prepare,kernel_swap_overhead,qft3_status,kernel_transpile_status,benchmark_noise_model_version
+procD_line_6_rx_ry_rz_cx,linear,6,rx;ry;rz;cx,10,none,2,6,6,22,12,1,1.0,0.603585,4,6,0,0,0,measured,measured,QFF2026-v2
+procD_line_6_rz_sx_cx,linear,6,rz;sx;cx,10,none,2,6,6,24,12,1,1.0,0.59573,4,8,0,0,0,measured,measured,QFF2026-v2
+procD_ring_6_rx_ry_rz_cx,ring,6,rx;ry;rz;cx,12,none,2,6,6,22,12,1,1.0,0.603585,4,6,0,0,0,measured,measured,QFF2026-v2
+procD_ring_6_rz_sx_cx,ring,6,rz;sx;cx,12,none,2,6,6,24,12,1,1.0,0.59573,4,8,0,0,0,measured,measured,QFF2026-v2
+procD_star_6_rx_ry_rz_cx,star,6,rx;ry;rz;cx,10,none,2,6,6,22,12,1,1.0,0.603585,4,6,0,0,0,measured,measured,QFF2026-v2
+procD_star_6_rz_sx_cx,star,6,rz;sx;cx,10,none,2,6,6,24,12,1,1.0,0.59573,4,8,0,0,0,measured,measured,QFF2026-v2
+procD_all_to_all_6_rx_ry_rz_cx,custom,6,rx;ry;rz;cx,30,none,2,6,6,18,9,0,1.0,0.668377,4,6,0,0,0,measured,measured,QFF2026-v2
+procD_all_to_all_6_rz_sx_cx,custom,6,rz;sx;cx,30,none,2,6,6,20,9,0,1.0,0.659431,4,8,0,0,0,measured,measured,QFF2026-v2

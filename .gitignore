@@ -1,0 +1,27 @@
+.venv-qff2026/
+QFFPHASE2/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+.env
+*.pyc
+
+# Temporary and generated files
+.morph/
+.ipynb_checkpoints/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# Python virtual environments
+.venv/
+.venv-*/
+QFFPHASE2/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Generated experiment caches
+results/cache/

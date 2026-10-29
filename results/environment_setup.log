@@ -1,0 +1,1 @@
+Local environment note: the self-tests could not execute because Qiskit is absent and package-index DNS/network access failed during pip install. No official kit files were modified.

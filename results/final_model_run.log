@@ -1,0 +1,28 @@
+Leakage-safe CV: ent=none, reps=2, k=6, s=0.8, C=1, BA=0.7362
+Leakage-safe CV: ent=linear, reps=2, k=6, s=0.3, C=1, BA=0.7347
+Leakage-safe CV: ent=none, reps=1, k=6, s=1.2, C=1, BA=0.7337
+Leakage-safe CV: ent=none, reps=1, k=6, s=0.8, C=10, BA=0.7304
+Leakage-safe CV: ent=full, reps=1, k=6, s=0.2, C=10, BA=0.7300
+Leakage-safe CV: ent=none, reps=2, k=6, s=0.5, C=10, BA=0.7299
+Leakage-safe CV: ent=linear, reps=1, k=6, s=0.2, C=10, BA=0.7299
+Leakage-safe CV: ent=none, reps=2, k=6, s=1.2, C=1, BA=0.7286
+Leakage-safe CV: ent=full, reps=1, k=5, s=0.5, C=1, BA=0.7285
+Leakage-safe CV: ent=full, reps=1, k=6, s=0.3, C=1, BA=0.7285
+Leakage-safe CV: ent=none, reps=2, k=6, s=0.3, C=10, BA=0.7280
+Leakage-safe CV: ent=linear, reps=1, k=6, s=0.3, C=10, BA=0.7273
+Selected leakage-aware ideal kernel: none reps 2 k 6 s 0.8 C 1.0
+CV BA 0.7362 CV F1 0.7327 predictions 200
+                                          model  balanced_accuracy_cv  balanced_accuracy_std    f1_cv   f1_std                                                                                        status
+                        RBF-SVM all 50 features              0.718542               0.031430 0.726727 0.027127                                                    measured; see baseline validation protocol
+                            Logistic regression              0.690065               0.027182 0.697567 0.024068                                                    measured; see baseline validation protocol
+                       RBF-SVM x01-x06 ablation              0.538952               0.024737 0.541520 0.047806                                                    measured; see baseline validation protocol
+                                PCA-RBF-SVM k=4              0.688243               0.040559 0.688017 0.041587                                                    measured; see baseline validation protocol
+                         PCA-polynomial-SVM k=4              0.695515               0.040114 0.706122 0.047379                                                    measured; see baseline validation protocol
+                                PCA-RBF-SVM k=5              0.718781               0.034106 0.724960 0.036293                                                    measured; see baseline validation protocol
+                         PCA-polynomial-SVM k=5              0.719375               0.030713 0.717231 0.047667                                                    measured; see baseline validation protocol
+                                PCA-RBF-SVM k=6              0.721861               0.022261 0.722657 0.026552                                                    measured; see baseline validation protocol
+                         PCA-polynomial-SVM k=6              0.722739               0.028987 0.713820 0.042585                                                    measured; see baseline validation protocol
+                                PCA-RBF-SVM k=8              0.724189               0.012728 0.725437 0.023820                                                    measured; see baseline validation protocol
+                         PCA-polynomial-SVM k=8              0.722501               0.024674 0.715322 0.037994                                                    measured; see baseline validation protocol
+Ideal quantum kernel (none, reps=2, k=6, s=0.8)              0.736174               0.023324 0.732670 0.027450                                           fold-local PCA/scaling; shortlisted 12 configs; C=1
+             Noisy quantum kernel (PSD-clipped)                   NaN                    NaN      NaN      NaN diagnostics found, but noisy classification metrics are absent; rerun noisy-kernel experiment
