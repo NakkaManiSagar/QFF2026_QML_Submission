@@ -97,3 +97,30 @@ The `requirements.txt` file defines the required versions. `pip_freeze.txt` reco
 
 The official instructions specify submitting the **public GitHub repository URL** through the hackathon submission portal. Ensure the final required files are committed and pushed to the repository, and follow the portal's instructions for submitting the URL.
 
+
+## Technical Documentation
+
+The additional project documentation is available here:
+
+- [Project Architecture](docs/PROJECT_ARCHITECTURE.md)
+- [Experiment Methodology](docs/EXPERIMENT_METHODOLOGY.md)
+- [Results and Analysis](results.md)
+- [Requirement Audit](results/REQUIREMENT_AUDIT.md)
+- [AI Use Disclosure](AI_DISCLOSURE.md)
+
+## Verification Commands
+
+Run the following commands from the repository root:
+
+```powershell
+python tools/check_environment.py
+python tools/validate_predictions.py q2 predictions_q2.csv
+python benchmark/qff_qml_benchmark.py processor_d_config.json
+python noise_model/benchmark_noise_model.py
+```
+
+The Processor D benchmark reports QFT-3 circuit depth, gate count, SWAP overhead and ideal/noisy fidelity.
+
+The prediction validator checks the submission file format. It does not measure hidden-test accuracy.
+
+The noise-model self-test confirms that the organizer-provided QFF2026-v2 noise model initializes successfully.

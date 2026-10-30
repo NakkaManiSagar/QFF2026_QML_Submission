@@ -22,3 +22,48 @@ This audit reflects the available project files and successful local verificatio
 ## Performance and evaluation caveats
 
 The ideal quantum-kernel grid selected none entanglement, reps=2, k=6, bandwidth s=0.8, C=1. Its five-fold CV balanced accuracy is 0.7362 and F1 is 0.7327. These are model-selection scores rather than an independent test estimate. The noisy-kernel metrics come from a separate subset experiment and are not directly comparable to the ideal model's five-fold CV results. No hidden-test score is established by these results.
+
+## Latest Verification Update — 2026-10-30
+
+The following verification commands were rerun successfully in the project virtual environment:
+
+| Check | Current result | Evidence |
+|---|---|---|
+| Processor D official benchmark | PASS | results/processor_d_benchmark_run.log |
+| Official noise model initialization | PASS | results/noise_model_self_test.log |
+| Q2 prediction validator | PASS | predictions_q2.csv |
+| GitHub synchronization at previous check | PASS | Local and remote main commit hashes matched |
+
+Latest Processor D metrics:
+
+- Depth before transpilation: 6
+- Depth after transpilation: 18
+- Two-qubit gates: 9
+- SWAP overhead: 0
+- Ideal fidelity: 1.000000
+- Noisy fidelity: 0.668377
+- Noise model: QFF2026-v2
+
+### Fidelity definitions
+
+Task A Bell-state fidelity:
+
+F = (1 + <XX> - <YY> + <ZZ>) / 4
+
+Task B QFT-3 fidelity:
+
+F_j = <psi_j|rho_j|psi_j>
+
+The QFT-3 result is the average of F_j over the eight computational-basis inputs.
+
+### Remaining review items
+
+| Requirement | State | Next action |
+|---|---|---|
+| Notebook consistency | REVIEW REQUIRED | Re-execute the final notebook and inspect outputs |
+| Classical comparison consistency | REVIEW REQUIRED | Rerun baselines with the same folds and preprocessing protocol |
+| Authoritative participant problem statement | UNVERIFIED | Compare against the official participant DOCX |
+| Final report consistency | REVIEW REQUIRED | Check all report figures against current experiment evidence |
+| Final ZIP archive | REVIEW REQUIRED | Rebuild and inspect after all documentation changes |
+
+This audit records local verification evidence. It does not establish hidden-test accuracy, quantum advantage or competition ranking.

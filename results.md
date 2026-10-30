@@ -205,3 +205,55 @@ The project package contains the principal deliverables:
 - Supporting source code, experiment outputs, benchmark assets, and requirement audit
 
 The project should be submitted through the official hackathon process using the public GitHub repository URL, following the organizer's instructions.
+
+## 9. Official Fidelity Definitions
+
+### Task A — Bell-state fidelity
+
+The target Bell state is:
+
+\[
+|\Phi^+\rangle = \frac{|00\rangle + |11\rangle}{\sqrt{2}}
+\]
+
+The official benchmark calculates fidelity using Pauli correlations:
+
+\[
+F_{\mathrm{Bell}} =
+\frac{1 + \langle XX\rangle - \langle YY\rangle + \langle ZZ\rangle}{4}
+\]
+
+The standard error is:
+
+\[
+SE(F) =
+\frac{\sqrt{SE_{XX}^{2}+SE_{YY}^{2}+SE_{ZZ}^{2}}}{4}
+\]
+
+Each Pauli expectation is estimated from measurement parity. The benchmark uses 8192 shots.
+
+The population overlap \(P(00)+P(11)\) is not the complete Bell-state fidelity.
+
+### Task B — Processor D QFT-3 fidelity
+
+For each computational-basis input \(|j\rangle\), the ideal output is the QFT output \(|\psi_j\rangle\).
+
+The benchmark computes:
+
+\[
+F_j = \langle \psi_j | \rho_j | \psi_j \rangle
+\]
+
+where \(\rho_j\) is the simulated density matrix of the three logical qubits.
+
+The final QFT-3 fidelity is the average over eight inputs:
+
+\[
+F_{\mathrm{QFT3}} = \frac{1}{8}\sum_{j=0}^{7}F_j
+\]
+
+The input is loaded noise-free. The transpiled circuit is simulated under the QFF2026-v2 noise model. This calculation includes gate errors but excludes measurement and readout errors.
+
+The latest verified Processor D results are depth 18 after transpilation, 9 two-qubit gates, zero SWAP overhead, ideal fidelity 1.000000 and noisy fidelity 0.668377.
+
+These definitions follow the official implementation in `benchmark/qff_qml_benchmark.py`.
