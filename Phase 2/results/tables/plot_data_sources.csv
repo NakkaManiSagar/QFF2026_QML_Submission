@@ -1,0 +1,9 @@
+figure,source_values
+01_cv_classical_vs_quantum.png,Five-fold CV values: BA 0.7185/0.7242/0.7362; F1 0.7267/0.7254/0.7327.
+02_dashboard_experiment_metrics.png,"Dashboard executive summary: 71.85%, 77.72%, 74.76%."
+03_bell_state_ideal_vs_noisy.png,"Bell experiment, 8192 shots; ideal/noisy XX YY ZZ and fidelity."
+04_processor_d_candidate_fidelity.png,Processor D candidate values transcribed from uploaded dashboard screenshot; rounded to 4 decimals.
+05_processor_d_resource_metrics.png,"Processor D candidate depth, two-qubit gates, SWAP overhead transcribed from uploaded dashboard screenshot."
+06_noisy_kernel_diagnostics.png,Noisy subset diagnostics: off-diagonal means and kernel alignment.
+07_prediction_distribution.png,"Prediction counts A=112, B=88 as visible in uploaded dashboard screenshot."
+08_evaluation_protocols_separate.png,Separate panels preserve dashboard and five-fold CV protocols.
